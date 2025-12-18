@@ -364,6 +364,17 @@ ul.sub-menu li:hover a span {
   overflow: hidden;
 }
 
+
+.mean-container .mean-bar::before {
+  color: #fff;
+  content: "ErgoVita";
+  font-size: 28px;
+  font-weight: 600;
+  right: 10px;
+  position: absolute;
+  top: 18px;
+}
+
 /*
 <!-- ============================================================== -->
 <!-- mediic Start Hero Section -->
@@ -6020,3 +6031,66 @@ span.flaticon-multiply i {
     justify-content: center;
   }
 }
+
+
+
+/* چسبان */
+.mobile-menu-area.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+/* شیشه‌ای حرفه‌ای */
+.premium-glass {
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.78),
+      rgba(255, 255, 255, 0.55));
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(13, 110, 253, 0.18);
+  box-shadow: 0 12px 35px rgba(13, 110, 253, 0.15);
+  transition: all 0.35s ease;
+}
+
+/* برند */
+.mobile-brand {
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+  padding: 14px 0 10px;
+  letter-spacing: 1px;
+  color: #0d6efd;
+}
+
+.mobile-brand span {
+  color: #1aa3ff;
+}
+
+/* آیتم‌ها */
+.mobile-menu .nav_scroll li a {
+  padding: 13px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* هاور نرم */
+.mobile-menu .nav_scroll li a:hover {
+  color: #0d6efd;
+}
+
+/* زیرمنو */
+.mobile-menu .sub-menu {
+  padding-right: 20px;
+}
+
+/* اسکرول افکت ظریف */
+@media (max-width: 991px) {
+  .premium-glass.scrolled {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 16px 45px rgba(13, 110, 253, 0.25);
+  }
+}
+
+

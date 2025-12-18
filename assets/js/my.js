@@ -121,12 +121,14 @@ var typed = new Typed("#typed-text", {
 });
 
 document.getElementById("smsButton").addEventListener("click", function () {
-  var name = encodeURIComponent(document.getElementById("name").value);
-  var lastName = encodeURIComponent(document.getElementById("lastName").value);
-  var phone = encodeURIComponent(document.getElementById("phone").value);
-  var nationalCode = encodeURIComponent(document.getElementById("nationalCode").value);
 
-  var smsText = `جهت دریافت نوبت اطلاعات زیر را تکمیل کنید
+  var name = document.getElementById("name").value;
+  var lastName = document.getElementById("lastName").value;
+  var phone = document.getElementById("phone").value;
+  var nationalCode = document.getElementById("nationalCode").value;
+
+  var smsText =
+`جهت دریافت نوبت
 نام: ${name}
 نام خانوادگی: ${lastName}
 تلفن: ${phone}
@@ -137,6 +139,7 @@ document.getElementById("smsButton").addEventListener("click", function () {
 
   window.location.href = smsLink;
 });
+
 
 
 
